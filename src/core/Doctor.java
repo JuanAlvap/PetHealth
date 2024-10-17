@@ -19,6 +19,24 @@ public class Doctor extends Person {
         this.petHealth = null;
         this.treatments = new ArrayList<>();
     }
+
+    public PetHealth getPetHealth() {
+        return petHealth;
+    }
+
+    public ArrayList<Treatment> getTreatments() {
+        return treatments;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+    
+    
     
     
 }
