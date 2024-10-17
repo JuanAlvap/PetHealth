@@ -35,5 +35,31 @@ public abstract class Pet {
         }
         return false;
     }
+
+    public ArrayList<Treatment> getTreatments() {
+        return treatments;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public Owner getOwner() {
+        return owner;
+    }
+    
+    
     
 }
