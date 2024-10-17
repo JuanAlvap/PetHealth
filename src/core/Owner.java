@@ -11,6 +11,7 @@ import java.util.ArrayList;
  * @author cande
  */
 public class Owner extends Person {
+
     private PetHealth petHealth;
     private ArrayList<Pet> pets;
 
@@ -35,13 +36,17 @@ public class Owner extends Person {
     public String getName() {
         return name;
     }
-    
-    public boolean addPet(Pet pet){
-        if(this.pets.contains(pet)){
+
+    public boolean addPet(Pet pet) {
+        if (this.pets.contains(pet)) {
             this.pets.add(pet);
             return true;
         }
         return false;
     }
-    
+
+    public void setPetHealth(PetHealth petHealth) {
+        this.petHealth = petHealth;
+    }
+
 }

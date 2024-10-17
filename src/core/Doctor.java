@@ -19,6 +19,8 @@ public class Doctor extends Person {
         super(id, name);
         this.petHealth = null;
         this.treatments = new ArrayList<>();
+        
+        this.petHealth.addDoctor(this);
     }
 
     public PetHealth getPetHealth() {
@@ -35,6 +37,10 @@ public class Doctor extends Person {
 
     public String getName() {
         return name;
+    }
+
+    public void setPetHealth(PetHealth petHealth) {
+        this.petHealth = petHealth;
     }
 
     public boolean addTreatment(Treatment treatment) {

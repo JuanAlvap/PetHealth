@@ -11,9 +11,10 @@ import java.util.ArrayList;
  *
  * @author cande
  */
-public class Treatment{
+public class Treatment {
+
     private static int ID = 0;
-    
+
     private int id;
     private TreatmentType type;
     private LocalDate date;
@@ -28,8 +29,9 @@ public class Treatment{
         this.cost = cost;
         this.pet = pet;
         this.doctors = doctors;
-        
+
         ID++;
+        this.pet.addTreatment(this);
     }
 
     public static int getID() {
@@ -59,10 +61,13 @@ public class Treatment{
     public ArrayList<Doctor> getDoctors() {
         return doctors;
     }
-    
-    
-    
-    
-    
-    
+
+    public boolean addDoctor(Doctor doctor) {
+        if (!this.doctors.contains(doctor)) {
+            this.doctors.add(doctor);
+            return true;
+        }
+        return false;
+    }
+
 }
