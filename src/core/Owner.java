@@ -17,10 +17,9 @@ public class Owner extends Person {
 
     public Owner(int id, String name) {
         super(id, name);
-        this.petHealth = null;
         this.pets = new ArrayList<>();
         
-        this.petHealth.addOwner(this);
+        this.petHealth = null;
     }
 
     public PetHealth getPetHealth() {
@@ -49,6 +48,7 @@ public class Owner extends Person {
 
     public void setPetHealth(PetHealth petHealth) {
         this.petHealth = petHealth;
+        //this.petHealth.addOwner(this);
     }
 
 }

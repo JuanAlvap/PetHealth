@@ -24,7 +24,7 @@ public abstract class Pet {
         this.height = height;
         this.weight = weight;
         this.owner = owner;
-        
+        this.treatments = new ArrayList<>();
         this.owner.addPet(this);
     }
     

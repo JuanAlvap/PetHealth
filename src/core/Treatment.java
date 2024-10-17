@@ -62,6 +62,12 @@ public class Treatment {
         return doctors;
     }
 
+    public void setPet(Pet pet) {
+        this.pet = pet;
+    }
+    
+    
+
     public boolean addDoctor(Doctor doctor) {
         if (!this.doctors.contains(doctor)) {
             this.doctors.add(doctor);

@@ -15,6 +15,10 @@ public class Cat extends Pet {
         super(name, age, height, weight, owner);
         this.breed = breed;
     }
+
+    public String getBreed() {
+        return breed;
+    }
     
     
 }

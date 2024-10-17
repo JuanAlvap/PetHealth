@@ -20,7 +20,7 @@ public class Doctor extends Person {
         this.petHealth = null;
         this.treatments = new ArrayList<>();
         
-        this.petHealth.addDoctor(this);
+        //this.petHealth.addDoctor(this);
     }
 
     public PetHealth getPetHealth() {
