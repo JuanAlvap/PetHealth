@@ -19,6 +19,24 @@ public class Owner extends Person {
         this.petHealth = null;
         this.pets = new ArrayList<>();
     }
+
+    public PetHealth getPetHealth() {
+        return petHealth;
+    }
+
+    public ArrayList<Pet> getPets() {
+        return pets;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+    
+    
     
     
 }
