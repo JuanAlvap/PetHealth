@@ -4,18 +4,11 @@
  */
 package core;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
-
 /**
  *
  * @author cande
  */
-public class Treatment{
-    private int id;
-    private TreatmentType type;
-    private LocalDate date;
-    private float cost;
-    private Pet pet;
-    private ArrayList<Doctor> doctors;
+public abstract class Person {
+    protected int id;
+    protected String name;
 }
