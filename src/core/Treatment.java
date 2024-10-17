@@ -31,6 +31,36 @@ public class Treatment{
         
         ID++;
     }
+
+    public static int getID() {
+        return ID;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public TreatmentType getType() {
+        return type;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public double getCost() {
+        return cost;
+    }
+
+    public Pet getPet() {
+        return pet;
+    }
+
+    public ArrayList<Doctor> getDoctors() {
+        return doctors;
+    }
+    
+    
     
     
     
