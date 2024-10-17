@@ -30,10 +30,10 @@ public class PetHealth {
     
 
     public boolean addOwner(Owner o) {
-        
+        o.setPetHealth(this);
         if (!this.owners.contains(o)) {
             this.owners.add(o);
-            o.setPetHealth(this);
+            
             return true;
         }
         return false;
@@ -94,7 +94,7 @@ public class PetHealth {
             System.out.println("Id: " + owner.getId() + ", Name: " + owner.getName() + ", Number of Pets: " + owner.getPets().size());
             int petIndex = 1;
             for (Pet pet : owner.getPets()) {
-                System.out.println("- Pet " + petIndex + " (" + pet.getClass().getName() + "):");
+                System.out.println("- Pet " + petIndex + " (" + pet.getClass().getName().split("\\.")[1] + "):");
                 if (pet instanceof Dog || pet instanceof Cat) {
                     String breed = "";
                     if (pet instanceof Dog) {
@@ -118,8 +118,9 @@ public class PetHealth {
                     } else {
                         System.out.print(" " + t.getId() + ",");
                     }
+                    treatmentIndex++;
                 }
-
+                petIndex++;
             }
         }
 

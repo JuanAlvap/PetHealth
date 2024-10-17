@@ -39,7 +39,7 @@ public class Owner extends Person {
     }
 
     public boolean addPet(Pet pet) {
-        if (this.pets.contains(pet)) {
+        if (!this.pets.contains(pet)) {
             this.pets.add(pet);
             return true;
         }
