@@ -12,10 +12,27 @@ import java.util.ArrayList;
  * @author cande
  */
 public class Treatment{
+    private static int ID = 0;
+    
     private int id;
     private TreatmentType type;
     private LocalDate date;
-    private float cost;
+    private double cost;
     private Pet pet;
     private ArrayList<Doctor> doctors;
+
+    public Treatment(Pet pet, ArrayList<Doctor> doctors, TreatmentType type, LocalDate date, double cost) {
+        this.id = ID;
+        this.type = type;
+        this.date = date;
+        this.cost = cost;
+        this.pet = pet;
+        this.doctors = doctors;
+        
+        ID++;
+    }
+    
+    
+    
+    
 }

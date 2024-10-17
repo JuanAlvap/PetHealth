@@ -4,10 +4,13 @@
  */
 package core;
 
-/**
- *
- * @author cande
- */
 public class Dog extends Pet {
     private String breed;
+
+    public Dog(String name, int age, double height, double weight, Owner owner, String breed) {
+        super(name, age, height, weight, owner);
+        this.breed = breed;
+    }
+    
+    
 }

@@ -13,4 +13,12 @@ import java.util.ArrayList;
 public class Owner extends Person {
     private PetHealth petHealth;
     private ArrayList<Pet> pets;
+
+    public Owner(int id, String name) {
+        super(id, name);
+        this.petHealth = null;
+        this.pets = new ArrayList<>();
+    }
+    
+    
 }

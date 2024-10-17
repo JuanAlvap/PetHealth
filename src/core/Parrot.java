@@ -9,5 +9,9 @@ package core;
  * @author cande
  */
 public class Parrot extends Pet {
-    
+
+    public Parrot(String name, int age, double height, double weight, Owner owner) {
+        super(name, age, height, weight, owner);
+    }
+
 }

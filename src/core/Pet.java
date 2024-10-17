@@ -13,8 +13,18 @@ import java.util.ArrayList;
 public abstract class Pet {
     protected String name;
     protected int age;
-    protected float height;
-    protected float weight;
+    protected double height;
+    protected double weight;
     protected Owner owner;
     protected ArrayList<Treatment> treatments;   
+
+    public Pet(String name, int age, double height, double weight, Owner owner) {
+        this.name = name;
+        this.age = age;
+        this.height = height;
+        this.weight = weight;
+        this.owner = owner;
+    }
+    
+    
 }
