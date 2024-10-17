@@ -11,6 +11,7 @@ import java.util.ArrayList;
  * @author cande
  */
 public class Doctor extends Person {
+
     private PetHealth petHealth;
     private ArrayList<Treatment> treatments;
 
@@ -35,8 +36,13 @@ public class Doctor extends Person {
     public String getName() {
         return name;
     }
-    
-    
-    
-    
+
+    public boolean addTreatment(Treatment treatment) {
+        if (!this.treatments.contains(treatment)) {
+            this.treatments.add(treatment);
+            return true;
+        }
+        return false;
+    }
+
 }

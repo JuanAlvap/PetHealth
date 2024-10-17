@@ -24,7 +24,16 @@ public abstract class Pet {
         this.height = height;
         this.weight = weight;
         this.owner = owner;
+        
+        this.owner.addPet(this);
     }
     
+    public boolean addTreatment(Treatment treatment){
+        if(!this.treatments.contains(treatment)){
+            this.treatments.add(treatment);
+            return true;
+        }
+        return false;
+    }
     
 }
