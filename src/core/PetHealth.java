@@ -74,6 +74,7 @@ public class PetHealth {
 
     public void ownerPetSummary() {
         System.out.println("---------- Owner and Pet Summary ----------");
+        
     }
 
     public Owner ownerMostSpent() {
