@@ -19,6 +19,8 @@ public class Owner extends Person {
         super(id, name);
         this.petHealth = null;
         this.pets = new ArrayList<>();
+        
+        this.petHealth.addOwner(this);
     }
 
     public PetHealth getPetHealth() {
